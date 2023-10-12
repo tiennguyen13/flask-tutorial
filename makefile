@@ -8,7 +8,8 @@ run:
 package:
 	pip install -e .
 
-test:
+test: package
+	# pip install '.[test]'
 	pytest
 
 coverage:
