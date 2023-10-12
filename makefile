@@ -7,3 +7,11 @@ run:
 
 package:
 	pip install -e .
+
+test:
+	pytest
+
+coverage:
+	coverage run -m pytest
+	coverage report
+	coverage html
